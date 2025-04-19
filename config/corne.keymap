@@ -5,25 +5,33 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+
+#include "keys_us_international.h"
+
 / {
     combos {
         compatible = "zmk,combos";
-
-        aida {
-            bindings = <&kp RA(N0)>;
+      combo_aring{
+          layers = <0>;
+          timeout-ms = <50>;
+          key-positions = <20 12>;
+          bindings = <&kp EN_A_RING>;
+        };
+      combo_oe{
+          layers = <0>;
+          timeout-ms = <50>;
+          key-positions = <22 20>;
+          bindings = <&kp EN_O_UMLAUT>;
+        };
+        combo_ae {
+            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <12 23>;
-        };
-
-        aring {
-            bindings = <&kp RA(W)>;
-            key-positions = <20 12>;
-        };
-
-        oring {
-            bindings = <&kp RA(P)>;
-            key-positions = <22 20>;
+            bindings = <&kp EN_A_UMLAUT>;
         };
     };
+};
+
 
     keymap {
         compatible = "zmk,keymap";
