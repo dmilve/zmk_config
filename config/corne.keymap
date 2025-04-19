@@ -30,7 +30,7 @@
             bindings = <&kp EN_A_UMLAUT>;
         };
     };
-};
+
 
 
     keymap {
