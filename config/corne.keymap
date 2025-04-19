@@ -14,19 +14,19 @@
       combo_aring{
           layers = <0>;
           timeout-ms = <50>;
-          key-positions = <20 12>;
+          key-positions = <22 13>;
           bindings = <&kp EN_A_RING>;
         };
       combo_oe{
           layers = <0>;
           timeout-ms = <50>;
-          key-positions = <22 20>;
+          key-positions = <21 23>;
           bindings = <&kp EN_O_UMLAUT>;
         };
         combo_ae {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <12 23>;
+            key-positions = <13 20>;
             bindings = <&kp EN_A_UMLAUT>;
         };
     };
